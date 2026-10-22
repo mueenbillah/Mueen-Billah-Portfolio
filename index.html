@@ -1,0 +1,636 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mueen Billah | CST Student & Future Software Engineer</title>
+  <meta name="description" content="Explore the portfolio of Mueen Billah, a Computer Science and Technology student interested in programming, web development, and software engineering.">
+  <meta name="author" content="Mueen Billah">
+  <meta name="theme-color" content="#080d18">
+
+  <meta property="og:title" content="Mueen Billah | Personal Portfolio">
+  <meta property="og:description" content="My journey in programming, web development, and software engineering.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Mueen Billah home">
+        <span class="logo-mark">M</span>
+        <span>Mueen<span class="accent">.</span></span>
+      </a>
+
+      <button class="menu-toggle icon-button" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="#home" data-en="Home" data-bn="হোম">Home</a>
+        <a class="nav-link" href="#about" data-en="About" data-bn="আমার সম্পর্কে">About</a>
+        <a class="nav-link" href="#skills" data-en="Skills" data-bn="দক্ষতা">Skills</a>
+        <a class="nav-link" href="#projects" data-en="Projects" data-bn="প্রজেক্ট">Projects</a>
+        <a class="nav-link" href="#journey" data-en="Journey" data-bn="আমার যাত্রা">Journey</a>
+        <a class="nav-link" href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+
+        <div class="nav-actions">
+          <button class="icon-button" id="langBtn" aria-label="Switch language" title="Switch language">বাং</button>
+          <button class="icon-button" id="themeBtn" aria-label="Switch theme" title="Switch theme">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="availability">
+            <span class="status-dot"></span>
+            <span data-en="Student • Learning • Building" data-bn="শিক্ষার্থী • শিখছি • তৈরি করছি">Student • Learning • Building</span>
+          </div>
+
+          <p class="eyebrow" data-en="HELLO, I'M" data-bn="আসসালামু আলাইকুম, আমি">HELLO, I'M</p>
+          <h1>Mueen <span class="gradient-text">Billah</span></h1>
+
+          <h2 class="hero-role">
+            <span data-en="CST Student &" data-bn="CST শিক্ষার্থী ও">CST Student &</span>
+            <span class="typed-text" id="typedText">Future Software Engineer</span>
+          </h2>
+
+          <p class="hero-description"
+             data-en="I'm a Computer Science and Technology student at Brahmanbaria Polytechnic Institute. I'm learning programming, building web projects, and working toward my goal of becoming a software engineer."
+             data-bn="আমি ব্রাহ্মণবাড়িয়া পলিটেকনিক ইনস্টিটিউটের কম্পিউটার সায়েন্স অ্যান্ড টেকনোলজি বিভাগের শিক্ষার্থী। প্রোগ্রামিং শিখছি, ওয়েব প্রজেক্ট তৈরি করছি এবং একজন সফটওয়্যার ইঞ্জিনিয়ার হওয়ার লক্ষ্যে এগিয়ে যাচ্ছি।">
+            I'm a Computer Science and Technology student at Brahmanbaria Polytechnic Institute. I'm learning programming, building web projects, and working toward my goal of becoming a software engineer.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">
+              <span data-en="Explore My Work" data-bn="আমার কাজ দেখুন">Explore My Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-secondary" href="#contact">
+              <i class="fa-regular fa-envelope"></i>
+              <span data-en="Contact Me" data-bn="যোগাযোগ করুন">Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-socials" aria-label="Social media links">
+            <a href="https://github.com/mueenbillah" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mueen-billah-5020623b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61562875433491" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@MueenBillah" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-card">
+            <div class="profile-top">
+              <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+              <span class="profile-label">developer.profile</span>
+            </div>
+
+            <div class="profile-image-wrap">
+              <img src="images/profile.png" alt="Portrait of Mueen Billah"
+                   class="profile-image"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+              <div class="profile-placeholder" aria-hidden="true">
+                <span>MB</span>
+              </div>
+            </div>
+
+            <h3>Mueen Billah</h3>
+            <p class="profile-subtitle" data-en="Aspiring Software Engineer" data-bn="ভবিষ্যৎ সফটওয়্যার ইঞ্জিনিয়ার">Aspiring Software Engineer</p>
+
+            <div class="profile-tags">
+              <span><i class="fa-solid fa-code"></i> Coding</span>
+              <span><i class="fa-solid fa-laptop-code"></i> Web Dev</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> CST</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-code"><i class="fa-solid fa-code"></i> <span>Keep Coding</span></div>
+          <div class="floating-badge badge-growth"><i class="fa-solid fa-arrow-trend-up"></i> <span>Keep Growing</span></div>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#about">
+        <span data-en="Scroll to explore" data-bn="আরও দেখতে স্ক্রল করুন">Scroll to explore</span>
+        <i class="fa-solid fa-angles-down"></i>
+      </a>
+    </section>
+
+    <!-- QUICK INTRO -->
+    <section class="quick-stats">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <div><strong>CST</strong><span data-en="Academic Department" data-bn="শিক্ষা বিভাগ">Academic Department</span></div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fa-solid fa-code"></i></span>
+          <div><strong>Learning</strong><span data-en="Programming & Development" data-bn="প্রোগ্রামিং ও ডেভেলপমেন্ট">Programming & Development</span></div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fa-solid fa-bullseye"></i></span>
+          <div><strong>DUET</strong><span data-en="Academic Goal" data-bn="শিক্ষাগত লক্ষ্য">Academic Goal</span></div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fa-solid fa-rocket"></i></span>
+          <div><strong>Software</strong><span data-en="Career Goal" data-bn="ক্যারিয়ার লক্ষ্য">Career Goal</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="GET TO KNOW ME" data-bn="আমার সম্পর্কে জানুন">GET TO KNOW ME</p>
+          <h2 data-en="A little about <span class='gradient-text'>me</span>" data-bn="আমার সম্পর্কে <span class='gradient-text'>কিছু কথা</span>">A little about <span class="gradient-text">me</span></h2>
+          <p data-en="My background, interests, and the direction I'm working toward." data-bn="আমার পড়াশোনা, আগ্রহ এবং ভবিষ্যৎ লক্ষ্যের গল্প।">My background, interests, and the direction I'm working toward.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <h3 data-en="Learning today. Building for tomorrow." data-bn="আজ শিখছি, আগামী দিনের জন্য তৈরি হচ্ছি।">Learning today. Building for tomorrow.</h3>
+            <p data-en="I'm studying Computer Science and Technology at Brahmanbaria Polytechnic Institute in Bangladesh. Technology interests me because it gives us tools to solve real problems and turn ideas into useful products."
+               data-bn="আমি বাংলাদেশের ব্রাহ্মণবাড়িয়া পলিটেকনিক ইনস্টিটিউটে কম্পিউটার সায়েন্স অ্যান্ড টেকনোলজি নিয়ে পড়াশোনা করছি। প্রযুক্তির প্রতি আমার আগ্রহের কারণ হলো—এটি বাস্তব সমস্যার সমাধান করতে এবং নতুন ধারণাকে কাজে লাগানোর সুযোগ দেয়।">
+              I'm studying Computer Science and Technology at Brahmanbaria Polytechnic Institute in Bangladesh. Technology interests me because it gives us tools to solve real problems and turn ideas into useful products.
+            </p>
+            <p data-en="I'm developing my programming fundamentals, exploring web development, and learning by creating projects. I know the journey takes consistency and patience, so I want to keep improving one step at a time."
+               data-bn="আমি প্রোগ্রামিংয়ের ভিত্তি মজবুত করছি, ওয়েব ডেভেলপমেন্ট শিখছি এবং প্রজেক্ট তৈরির মাধ্যমে অভিজ্ঞতা অর্জন করছি। এই পথে ধৈর্য ও নিয়মিত চর্চা জরুরি, তাই প্রতিদিন একটু একটু করে উন্নতি করতে চাই।">
+              I'm developing my programming fundamentals, exploring web development, and learning by creating projects. I know the journey takes consistency and patience, so I want to keep improving one step at a time.
+            </p>
+
+            <div class="about-highlight">
+              <i class="fa-solid fa-quote-left"></i>
+              <p data-en="My goal is not just to learn technology, but to use it to build something meaningful."
+                 data-bn="আমার লক্ষ্য শুধু প্রযুক্তি শেখা নয়, বরং প্রযুক্তি ব্যবহার করে অর্থবহ কিছু তৈরি করা।">
+                My goal is not just to learn technology, but to use it to build something meaningful.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-details reveal">
+            <div class="detail-card">
+              <span class="detail-icon"><i class="fa-solid fa-user-graduate"></i></span>
+              <div><h4 data-en="Education" data-bn="শিক্ষা">Education</h4><p data-en="Computer Science & Technology" data-bn="কম্পিউটার সায়েন্স অ্যান্ড টেকনোলজি">Computer Science & Technology</p></div>
+            </div>
+            <div class="detail-card">
+              <span class="detail-icon"><i class="fa-solid fa-building-columns"></i></span>
+              <div><h4 data-en="Institute" data-bn="প্রতিষ্ঠান">Institute</h4><p>Brahmanbaria Polytechnic Institute</p></div>
+            </div>
+            <div class="detail-card">
+              <span class="detail-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div><h4 data-en="Country" data-bn="দেশ">Country</h4><p>Bangladesh</p></div>
+            </div>
+            <div class="detail-card">
+              <span class="detail-icon"><i class="fa-solid fa-lightbulb"></i></span>
+              <div><h4 data-en="Interests" data-bn="আগ্রহ">Interests</h4><p data-en="Programming, Web Development, Problem Solving" data-bn="প্রোগ্রামিং, ওয়েব ডেভেলপমেন্ট, সমস্যা সমাধান">Programming, Web Development, Problem Solving</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="WHAT I'M LEARNING" data-bn="যা শিখছি">WHAT I'M LEARNING</p>
+          <h2 data-en="My technical <span class='gradient-text'>toolkit</span>" data-bn="আমার প্রযুক্তিগত <span class='gradient-text'>দক্ষতা</span>">My technical <span class="gradient-text">toolkit</span></h2>
+          <p data-en="Skills I'm practicing and developing throughout my learning journey." data-bn="শেখার যাত্রায় যেসব দক্ষতা অনুশীলন ও উন্নত করছি।">Skills I'm practicing and developing throughout my learning journey.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card-icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3>Programming</h3>
+            <p data-en="Building logic and learning programming fundamentals." data-bn="প্রোগ্রামিং লজিক ও মৌলিক বিষয় শেখা।">Building logic and learning programming fundamentals.</p>
+            <div class="tag-list"><span>C</span><span>C++</span><span>Java</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Web Development</h3>
+            <p data-en="Creating responsive websites and practicing frontend fundamentals." data-bn="রেসপনসিভ ওয়েবসাইট তৈরি ও ফ্রন্টএন্ডের মৌলিক বিষয় অনুশীলন।">Creating responsive websites and practicing frontend fundamentals.</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <h3>Developer Tools</h3>
+            <p data-en="Practicing source control and maintaining project code." data-bn="সোর্স কন্ট্রোল ও প্রজেক্টের কোড ব্যবস্থাপনা অনুশীলন।">Practicing source control and maintaining project code.</p>
+            <div class="tag-list"><span>Git</span><span>GitHub</span><span>VS Code</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Database</h3>
+            <p data-en="Exploring data organization and database fundamentals." data-bn="ডেটা সংগঠন ও ডেটাবেসের মৌলিক বিষয় শেখা।">Exploring data organization and database fundamentals.</p>
+            <div class="tag-list"><span>MySQL</span><span>SQL Basics</span></div>
+          </article>
+        </div>
+
+        <div class="learning-note reveal">
+          <i class="fa-solid fa-circle-info"></i>
+          <p data-en="I'm still learning. This section reflects the technologies I'm studying or practicing, not a claim of professional-level expertise."
+             data-bn="আমি এখনো শিখছি। এখানে উল্লেখিত প্রযুক্তিগুলো আমার শেখা বা অনুশীলনের অংশ; এগুলোতে পেশাদার পর্যায়ের দক্ষতার দাবি নয়।">
+            I'm still learning. This section reflects the technologies I'm studying or practicing, not a claim of professional-level expertise.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING ROADMAP -->
+    <section class="section" id="roadmap">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="MY LEARNING PLAN" data-bn="আমার শেখার পরিকল্পনা">MY LEARNING PLAN</p>
+          <h2 data-en="The road <span class='gradient-text'>ahead</span>" data-bn="সামনের <span class='gradient-text'>পথচলা</span>">The road <span class="gradient-text">ahead</span></h2>
+          <p data-en="A practical direction for growing from a student into a software developer." data-bn="একজন শিক্ষার্থী থেকে সফটওয়্যার ডেভেলপার হওয়ার জন্য আমার পরিকল্পনা।">A practical direction for growing from a student into a software developer.</p>
+        </div>
+
+        <div class="roadmap">
+          <article class="roadmap-item reveal">
+            <div class="roadmap-marker"><i class="fa-solid fa-code"></i></div>
+            <div class="roadmap-card">
+              <span class="roadmap-label" data-en="CURRENT FOCUS" data-bn="বর্তমান লক্ষ্য">CURRENT FOCUS</span>
+              <h3 data-en="Strengthen programming fundamentals" data-bn="প্রোগ্রামিংয়ের ভিত্তি মজবুত করা">Strengthen programming fundamentals</h3>
+              <p data-en="Practice C/C++, problem solving, data structures, and algorithms. Improve consistency through small coding exercises."
+                 data-bn="C/C++, সমস্যা সমাধান, ডেটা স্ট্রাকচার ও অ্যালগরিদম অনুশীলন করা। ছোট ছোট কোডিং সমস্যার মাধ্যমে নিয়মিত চর্চা করা।">
+                Practice C/C++, problem solving, data structures, and algorithms. Improve consistency through small coding exercises.
+              </p>
+            </div>
+          </article>
+
+          <article class="roadmap-item reveal">
+            <div class="roadmap-marker"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="roadmap-card">
+              <span class="roadmap-label" data-en="NEXT STEP" data-bn="পরবর্তী ধাপ">NEXT STEP</span>
+              <h3 data-en="Build useful projects" data-bn="কাজের প্রজেক্ট তৈরি করা">Build useful projects</h3>
+              <p data-en="Improve HTML, CSS, JavaScript, Git, and database skills by building projects, documenting them, and sharing code on GitHub."
+                 data-bn="প্রজেক্ট তৈরি, ডকুমেন্টেশন এবং GitHub-এ কোড শেয়ারের মাধ্যমে HTML, CSS, JavaScript, Git ও ডেটাবেসের দক্ষতা বাড়ানো।">
+                Improve HTML, CSS, JavaScript, Git, and database skills by building projects, documenting them, and sharing code on GitHub.
+              </p>
+            </div>
+          </article>
+
+          <article class="roadmap-item reveal">
+            <div class="roadmap-marker"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="roadmap-card">
+              <span class="roadmap-label" data-en="ACADEMIC GOAL" data-bn="শিক্ষাগত লক্ষ্য">ACADEMIC GOAL</span>
+              <h3 data-en="Prepare for DUET" data-bn="DUET-এর প্রস্তুতি">Prepare for DUET</h3>
+              <p data-en="Build a realistic study routine, revise relevant academic subjects, and practice for the admission process."
+                 data-bn="বাস্তবসম্মত পড়াশোনার রুটিন তৈরি, প্রাসঙ্গিক একাডেমিক বিষয় রিভিশন এবং ভর্তি পরীক্ষার অনুশীলন করা।">
+                Build a realistic study routine, revise relevant academic subjects, and practice for the admission process.
+              </p>
+            </div>
+          </article>
+
+          <article class="roadmap-item reveal">
+            <div class="roadmap-marker"><i class="fa-solid fa-rocket"></i></div>
+            <div class="roadmap-card">
+              <span class="roadmap-label" data-en="LONG-TERM GOAL" data-bn="দীর্ঘমেয়াদি লক্ষ্য">LONG-TERM GOAL</span>
+              <h3 data-en="Become a software engineer" data-bn="সফটওয়্যার ইঞ্জিনিয়ার হওয়া">Become a software engineer</h3>
+              <p data-en="Keep learning, work on real-world problems, collaborate with others, and develop the skills needed for a software engineering career."
+                 data-bn="নিয়মিত শেখা, বাস্তব সমস্যার সমাধানে কাজ করা, অন্যদের সঙ্গে সহযোগিতা এবং সফটওয়্যার ইঞ্জিনিয়ারিং ক্যারিয়ারের জন্য প্রয়োজনীয় দক্ষতা তৈরি করা।">
+                Keep learning, work on real-world problems, collaborate with others, and develop the skills needed for a software engineering career.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="SELECTED WORK" data-bn="আমার কাজ">SELECTED WORK</p>
+          <h2 data-en="Projects I've <span class='gradient-text'>worked on</span>" data-bn="আমার তৈরি <span class='gradient-text'>প্রজেক্ট</span>">Projects I've <span class="gradient-text">worked on</span></h2>
+          <p data-en="Small steps, practical experience, and continuous improvement." data-bn="ছোট ছোট পদক্ষেপ, বাস্তব অভিজ্ঞতা এবং নিয়মিত উন্নতি।">Small steps, practical experience, and continuous improvement.</p>
+        </div>
+
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" data-en="All Projects" data-bn="সব প্রজেক্ট">All Projects</button>
+          <button class="filter-btn" data-filter="web" data-en="Web Development" data-bn="ওয়েব ডেভেলপমেন্ট">Web Development</button>
+          <button class="filter-btn" data-filter="personal" data-en="Personal" data-bn="ব্যক্তিগত">Personal</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" data-category="web">
+            <div class="project-preview preview-one">
+              <div class="preview-browser">
+                <div class="preview-dots"><span></span><span></span><span></span></div>
+                <div class="preview-content">
+                  <div class="preview-sidebar"></div>
+                  <div class="preview-main">
+                    <div class="preview-line wide"></div>
+                    <div class="preview-line"></div>
+                    <div class="preview-boxes"><span></span><span></span><span></span></div>
+                    <div class="preview-line wide"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-type">WEB APP</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>GitHub Issues Tracker</h3>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+              <p data-en="An issue-tracking interface with issue categories and search functionality, built as a learning project."
+                 data-bn="ইস্যু ক্যাটাগরি ও সার্চ সুবিধাসহ একটি ইস্যু ট্র্যাকিং ইন্টারফেস—শেখার উদ্দেশ্যে তৈরি।">
+                An issue-tracking interface with issue categories and search functionality, built as a learning project.
+              </p>
+              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span></div>
+              <div class="project-links">
+                <a href="https://github.com/mueenbillah214/B13-Assignment-05" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> <span data-en="Source Code" data-bn="সোর্স কোড">Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="personal web">
+            <div class="project-preview preview-two">
+              <div class="mini-portfolio">
+                <div class="mini-nav"><span>MB.</span><span>Home&nbsp;&nbsp; About&nbsp;&nbsp; Work</span></div>
+                <div class="mini-hero"><span>HELLO, I'M</span><strong>Mueen<br>Billah<span class="accent">.</span></strong><i class="fa-solid fa-circle-arrow-right"></i></div>
+                <div class="mini-cards"><span></span><span></span><span></span></div>
+              </div>
+              <span class="project-type">PERSONAL SITE</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Personal Portfolio</h3>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+              <p data-en="A personal website to introduce my background, showcase learning projects, and share my career goals."
+                 data-bn="আমার পরিচয়, শেখার প্রজেক্ট এবং ক্যারিয়ারের লক্ষ্য তুলে ধরার জন্য একটি ব্যক্তিগত ওয়েবসাইট।">
+                A personal website to introduce my background, showcase learning projects, and share my career goals.
+              </p>
+              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span></div>
+              <div class="project-links">
+                <a href="https://github.com/mueenbillah214/Mueen-Billah-Portfolio-Resources" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> <span data-en="Source Code" data-bn="সোর্স কোড">Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-coming reveal" data-category="personal">
+            <div class="coming-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="project-body">
+              <span class="roadmap-label" data-en="IN PROGRESS" data-bn="পরিকল্পনায়">IN PROGRESS</span>
+              <h3 data-en="Next Project" data-bn="পরবর্তী প্রজেক্ট">Next Project</h3>
+              <p data-en="I'm planning to build more practical projects as I improve my programming and development skills. This space will be updated when a new project is ready."
+                 data-bn="প্রোগ্রামিং ও ডেভেলপমেন্টের দক্ষতা বাড়ানোর সঙ্গে সঙ্গে আরও বাস্তবধর্মী প্রজেক্ট তৈরির পরিকল্পনা করছি। নতুন প্রজেক্ট তৈরি হলে এখানে যুক্ত করব।">
+                I'm planning to build more practical projects as I improve my programming and development skills. This space will be updated when a new project is ready.
+              </p>
+              <div class="tag-list"><span>Learning</span><span>Building</span><span>Improving</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-action reveal">
+          <a class="btn btn-secondary" href="https://github.com/mueenbillah214" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <span data-en="View My GitHub" data-bn="আমার GitHub দেখুন">View My GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & GOALS -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="MY JOURNEY" data-bn="আমার পথচলা">MY JOURNEY</p>
+          <h2 data-en="Education & <span class='gradient-text'>ambitions</span>" data-bn="শিক্ষা ও <span class='gradient-text'>স্বপ্ন</span>">Education & <span class="gradient-text">ambitions</span></h2>
+          <p data-en="The foundation I'm building and the goals that keep me moving." data-bn="যে ভিত্তি গড়ছি এবং যে লক্ষ্য আমাকে এগিয়ে যেতে সাহায্য করে।">The foundation I'm building and the goals that keep me moving.</p>
+        </div>
+
+        <div class="journey-grid">
+          <div class="journey-column reveal">
+            <h3 class="column-heading"><i class="fa-solid fa-graduation-cap"></i> <span data-en="Education" data-bn="শিক্ষাজীবন">Education</span></h3>
+            <div class="journey-entry">
+              <span class="journey-dot"></span>
+              <div class="journey-entry-content">
+                <span class="entry-label" data-en="CURRENT STUDIES" data-bn="বর্তমান পড়াশোনা">CURRENT STUDIES</span>
+                <h4>Computer Science & Technology</h4>
+                <p>Brahmanbaria Polytechnic Institute</p>
+                <p class="entry-description" data-en="Studying computer technology and developing academic and practical skills in programming and software."
+                   data-bn="কম্পিউটার প্রযুক্তি নিয়ে পড়াশোনা এবং প্রোগ্রামিং ও সফটওয়্যার বিষয়ে একাডেমিক ও ব্যবহারিক দক্ষতা অর্জন।">
+                  Studying computer technology and developing academic and practical skills in programming and software.
+                </p>
+              </div>
+            </div>
+            <div class="journey-entry">
+              <span class="journey-dot"></span>
+              <div class="journey-entry-content">
+                <span class="entry-label" data-en="CONTINUOUS LEARNING" data-bn="নিয়মিত শেখা">CONTINUOUS LEARNING</span>
+                <h4 data-en="Self-learning & Practice" data-bn="নিজে শেখা ও অনুশীলন">Self-learning & Practice</h4>
+                <p data-en="Programming, web development, and project-based learning."
+                   data-bn="প্রোগ্রামিং, ওয়েব ডেভেলপমেন্ট এবং প্রজেক্টের মাধ্যমে শেখা।">
+                  Programming, web development, and project-based learning.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey-column goals-column reveal">
+            <h3 class="column-heading"><i class="fa-solid fa-bullseye"></i> <span data-en="My Goals" data-bn="আমার লক্ষ্য">My Goals</span></h3>
+            <div class="goal-card">
+              <span class="goal-number">01</span>
+              <div><h4 data-en="Academic Growth" data-bn="একাডেমিক উন্নতি">Academic Growth</h4><p data-en="Prepare consistently for my academic responsibilities and DUET admission goal."
+                 data-bn="একাডেমিক দায়িত্ব ও DUET-এ ভর্তির লক্ষ্যে নিয়মিত প্রস্তুতি নেওয়া।">
+                Prepare consistently for my academic responsibilities and DUET admission goal.
+              </p></div>
+            </div>
+            <div class="goal-card">
+              <span class="goal-number">02</span>
+              <div><h4 data-en="Technical Skills" data-bn="প্রযুক্তিগত দক্ষতা">Technical Skills</h4><p data-en="Improve problem solving, programming, and software development fundamentals."
+                 data-bn="সমস্যা সমাধান, প্রোগ্রামিং এবং সফটওয়্যার ডেভেলপমেন্টের ভিত্তি মজবুত করা।">
+                Improve problem solving, programming, and software development fundamentals.
+              </p></div>
+            </div>
+            <div class="goal-card">
+              <span class="goal-number">03</span>
+              <div><h4 data-en="Career Development" data-bn="ক্যারিয়ার গঠন">Career Development</h4><p data-en="Build a credible portfolio, gain practical experience, and grow into a software engineer."
+                 data-bn="বিশ্বাসযোগ্য পোর্টফোলিও তৈরি, বাস্তব অভিজ্ঞতা অর্জন এবং সফটওয়্যার ইঞ্জিনিয়ার হিসেবে গড়ে ওঠা।">
+                Build a credible portfolio, gain practical experience, and grow into a software engineer.
+              </p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAL PRINCIPLES -->
+    <section class="section section-alt" id="values">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="WHAT KEEPS ME GOING" data-bn="যা আমাকে এগিয়ে রাখে">WHAT KEEPS ME GOING</p>
+          <h2 data-en="My learning <span class='gradient-text'>principles</span>" data-bn="আমার শেখার <span class='gradient-text'>নীতি</span>">My learning <span class="gradient-text">principles</span></h2>
+        </div>
+
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <span class="value-icon"><i class="fa-solid fa-book-open"></i></span>
+            <h3 data-en="Stay Curious" data-bn="জানার আগ্রহ রাখি">Stay Curious</h3>
+            <p data-en="Ask questions, explore new ideas, and keep learning." data-bn="প্রশ্ন করা, নতুন ধারণা খোঁজা এবং শেখা চালিয়ে যাওয়া।">Ask questions, explore new ideas, and keep learning.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="value-icon"><i class="fa-solid fa-repeat"></i></span>
+            <h3 data-en="Practice Consistently" data-bn="নিয়মিত অনুশীলন">Practice Consistently</h3>
+            <p data-en="Small, repeated efforts can create meaningful progress." data-bn="ছোট ছোট নিয়মিত প্রচেষ্টাও উল্লেখযোগ্য উন্নতি আনতে পারে।">Small, repeated efforts can create meaningful progress.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="value-icon"><i class="fa-solid fa-puzzle-piece"></i></span>
+            <h3 data-en="Solve Problems" data-bn="সমস্যার সমাধান">Solve Problems</h3>
+            <p data-en="Learn to understand a problem before choosing a solution." data-bn="সমাধান বেছে নেওয়ার আগে সমস্যাটি ভালোভাবে বুঝতে শেখা।">Learn to understand a problem before choosing a solution.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="value-icon"><i class="fa-solid fa-heart"></i></span>
+            <h3 data-en="Keep Humble" data-bn="বিনয়ী থাকা">Keep Humble</h3>
+            <p data-en="Recognize what I know, accept what I don't, and keep improving." data-bn="যা জানি তা স্বীকার করা, যা জানি না তা মেনে নেওয়া এবং উন্নতি চালিয়ে যাওয়া।">Recognize what I know, accept what I don't, and keep improving.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="LET'S CONNECT" data-bn="যোগাযোগ করি">LET'S CONNECT</p>
+          <h2 data-en="Have a project or <span class='gradient-text'>an idea?</span>" data-bn="কোনো প্রজেক্ট বা <span class='gradient-text'>আইডিয়া আছে?</span>">Have a project or <span class="gradient-text">an idea?</span></h2>
+          <p data-en="I'm open to connecting with fellow students, developers, and people who enjoy learning and building."
+             data-bn="সহপাঠী, ডেভেলপার এবং শেখা ও কিছু তৈরি করতে ভালোবাসেন—এমন মানুষের সঙ্গে যোগাযোগ করতে আগ্রহী।">
+            I'm open to connecting with fellow students, developers, and people who enjoy learning and building.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <h3 data-en="Let's talk" data-bn="কথা বলা যাক">Let's talk</h3>
+            <p data-en="Have feedback about my portfolio, want to discuss a project, or just want to connect? Send me an email or reach out through my social profiles."
+               data-bn="আমার পোর্টফোলিও সম্পর্কে মতামত আছে, কোনো প্রজেক্ট নিয়ে আলোচনা করতে চান, কিংবা পরিচিত হতে চান? ইমেইল বা সোশ্যাল প্রোফাইলের মাধ্যমে যোগাযোগ করুন।">
+              Have feedback about my portfolio, want to discuss a project, or just want to connect? Send me an email or reach out through my social profiles.
+            </p>
+
+            <a class="contact-method" href="mailto:mueenbillah214@gmail.com">
+              <span class="contact-method-icon"><i class="fa-regular fa-envelope"></i></span>
+              <span><small>Email me</small><strong>mueenbillah214@gmail.com</strong></span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <a class="contact-method" href="https://www.linkedin.com/in/mueen-billah-5020623b6/" target="_blank" rel="noopener noreferrer">
+              <span class="contact-method-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <span><small>Connect professionally</small><strong>LinkedIn Profile</strong></span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <a class="contact-method" href="https://github.com/mueenbillah214" target="_blank" rel="noopener noreferrer">
+              <span class="contact-method-icon"><i class="fa-brands fa-github"></i></span>
+              <span><small>Explore my code</small><strong>GitHub Profile</strong></span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+          </div>
+
+          <div class="contact-form-card reveal">
+            <h3 data-en="Send a message" data-bn="মেসেজ পাঠান">Send a message</h3>
+            <p class="form-note" data-en="This form opens your email app with your message prepared." data-bn="এই ফর্মটি আপনার মেসেজসহ ইমেইল অ্যাপ খুলবে।">This form opens your email app with your message prepared.</p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name" data-en="Your name" data-bn="আপনার নাম">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" data-placeholder-en="Enter your name" data-placeholder-bn="আপনার নাম লিখুন" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-en="Your email" data-bn="আপনার ইমেইল">Your email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" data-en="Subject" data-bn="বিষয়">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What would you like to discuss?" data-placeholder-en="What would you like to discuss?" data-placeholder-bn="কী বিষয়ে কথা বলতে চান?" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-en="Message" data-bn="মেসেজ">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message..." data-placeholder-en="Write your message..." data-placeholder-bn="আপনার মেসেজ লিখুন..." required></textarea>
+              </div>
+
+              <button class="btn btn-primary form-submit" type="submit">
+                <span data-en="Prepare Email" data-bn="ইমেইল তৈরি করুন">Prepare Email</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+              <p class="form-status" id="formStatus" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <div class="container final-cta-inner reveal">
+        <div>
+          <p class="eyebrow" data-en="ONE STEP AT A TIME" data-bn="এক ধাপ করে এগিয়ে">ONE STEP AT A TIME</p>
+          <h2 data-en="The journey continues." data-bn="পথচলা চলতেই থাকবে।">The journey continues.</h2>
+          <p data-en="Still learning. Still building. Still moving toward the goal." data-bn="এখনো শিখছি। তৈরি করছি। লক্ষ্যের দিকে এগিয়ে যাচ্ছি।">Still learning. Still building. Still moving toward the goal.</p>
+        </div>
+        <a class="btn btn-primary" href="#home">
+          <span data-en="Back to Top" data-bn="উপরে ফিরে যান">Back to Top</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="logo footer-logo" href="#home"><span class="logo-mark">M</span><span>Mueen<span class="accent">.</span></span></a>
+      <p data-en="Learning with purpose. Building with patience." data-bn="লক্ষ্য নিয়ে শিখছি, ধৈর্য নিয়ে তৈরি করছি।">Learning with purpose. Building with patience.</p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/mueenbillah214" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mueen-billah-5020623b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61562875433491" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@MueenBillah" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Mueen Billah. <span data-en="Made with care." data-bn="যত্ন নিয়ে তৈরি।">Made with care.</span></p>
+      <a href="#home" data-en="Back to top ↑" data-bn="উপরে যান ↑">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</body>
+</html>
